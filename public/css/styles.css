@@ -1,0 +1,22 @@
+
+#separator1{
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../images/separator1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+#separator2{
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../images/separator2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
