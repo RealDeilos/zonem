@@ -6815,7 +6815,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.formContent{\n    height: 100vh;\n    width: 100vw;\n}\n.subtitlecolor{\n    padding-top: 30px;\n    color: hsl(171, 100%, 41%);\n}\n.contactFooter{\n    position: absolute;\n    bottom: 7px;\n    height: 10vh;\n    width: 100%;\n    background-color:transparent;\n}\n@media(max-width:900px){\n#posicionamiento{\n    height: 100%;\n    width: 100%;\n}\n#message{\n        padding-top: 0;\n}\n.contactFooter{\n        height: 0px;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.formContent{\n    height: 100vh;\n    width: 100vw;\n}\n.subtitlecolor{\n    padding-top: 30px;\n    color: hsl(171, 100%, 41%);\n}\n.contactFooter{\n    position: absolute;\n    bottom: 7px;\n    height: 10vh;\n    width: 100%;\n    background-color:transparent;\n}\n@media(max-width:900px){\n.formContent{\n    height: 100%;\n    width: 100%;\n}\n#message{\n        padding-top: 0;\n}\n.contactFooter{\n        position: relative;\n        display: block;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -39099,170 +39099,158 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "formContent" }, [
-    _c(
-      "section",
-      { staticClass: "section", attrs: { id: "posicionamiento" } },
-      [
-        _c("div", { staticClass: "container pt-5" }, [
-          _c("div", { staticClass: "row pt-5" }, [
-            _c(
-              "div",
-              { staticClass: "col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" },
-              [
-                _c(
-                  "form",
-                  {
-                    attrs: { action: "/mail", method: "post" },
-                    on: {
-                      submit: function($event) {
-                        $event.preventDefault()
-                        return _vm.onSubmit($event)
-                      },
-                      keydown: function($event) {
-                        return _vm.searchErrors($event.target.name)
-                      }
+    _c("section", { staticClass: "section" }, [
+      _c("div", { staticClass: "container mt-5" }, [
+        _c("div", { staticClass: "row mt-5" }, [
+          _c(
+            "div",
+            { staticClass: "col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" },
+            [
+              _c(
+                "form",
+                {
+                  attrs: { action: "/mail", method: "post" },
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.onSubmit($event)
+                    },
+                    keydown: function($event) {
+                      return _vm.searchErrors($event.target.name)
                     }
-                  },
-                  [
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label" }, [_vm._v("Name")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.name,
-                              expression: "name"
-                            }
-                          ],
-                          staticClass: "input",
-                          attrs: {
-                            name: "name",
-                            type: "text",
-                            placeholder: "e.g Alex Smith",
-                            autofocus: ""
-                          },
-                          domProps: { value: _vm.name },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.name = $event.target.value
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _vm.error.has("name")
-                          ? _c(
-                              "span",
-                              { staticClass: "text-danger is-small" },
-                              [_vm._v(_vm._s(_vm.error.get("name")))]
-                            )
-                          : _vm._e()
-                      ])
-                    ]),
+                  }
+                },
+                [
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label" }, [_vm._v("Name")]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label" }, [_vm._v("Email")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.mail,
-                              expression: "mail"
-                            }
-                          ],
-                          staticClass: "input",
-                          attrs: {
-                            name: "mail",
-                            type: "text",
-                            placeholder: "e.g. alexsmith@gmail.com"
-                          },
-                          domProps: { value: _vm.mail },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.mail = $event.target.value
-                            }
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.name,
+                            expression: "name"
                           }
-                        }),
-                        _vm._v(" "),
-                        _vm.error.has("mail")
-                          ? _c(
-                              "span",
-                              { staticClass: "text-danger is-small" },
-                              [_vm._v(_vm._s(_vm.error.get("mail")))]
-                            )
-                          : _vm._e()
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label" }, [
-                        _vm._v("Request")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("textarea", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.description,
-                              expression: "description"
+                        ],
+                        staticClass: "input",
+                        attrs: {
+                          name: "name",
+                          type: "text",
+                          placeholder: "e.g Alex Smith",
+                          autofocus: ""
+                        },
+                        domProps: { value: _vm.name },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
                             }
-                          ],
-                          staticClass: "textarea",
-                          attrs: { name: "description", placeholder: "..." },
-                          domProps: { value: _vm.description },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.description = $event.target.value
-                            }
+                            _vm.name = $event.target.value
                           }
-                        }),
-                        _vm._v(" "),
-                        _vm.error.has("description")
-                          ? _c(
-                              "span",
-                              { staticClass: "text-danger is-small" },
-                              [_vm._v(_vm._s(_vm.error.get("description")))]
-                            )
-                          : _vm._e()
-                      ])
-                    ]),
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm.error.has("name")
+                        ? _c("span", { staticClass: "text-danger is-small" }, [
+                            _vm._v(_vm._s(_vm.error.get("name")))
+                          ])
+                        : _vm._e()
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label" }, [_vm._v("Email")]),
                     _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "button is-primary",
-                        attrs: { disabled: _vm.error.any() }
-                      },
-                      [_vm._v("Submit")]
-                    )
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(0)
-          ])
-        ]),
-        _vm._v(" "),
-        _vm._m(1)
-      ]
-    ),
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.mail,
+                            expression: "mail"
+                          }
+                        ],
+                        staticClass: "input",
+                        attrs: {
+                          name: "mail",
+                          type: "text",
+                          placeholder: "e.g. alexsmith@gmail.com"
+                        },
+                        domProps: { value: _vm.mail },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.mail = $event.target.value
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm.error.has("mail")
+                        ? _c("span", { staticClass: "text-danger is-small" }, [
+                            _vm._v(_vm._s(_vm.error.get("mail")))
+                          ])
+                        : _vm._e()
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label" }, [_vm._v("Request")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.description,
+                            expression: "description"
+                          }
+                        ],
+                        staticClass: "textarea",
+                        attrs: { name: "description", placeholder: "..." },
+                        domProps: { value: _vm.description },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.description = $event.target.value
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm.error.has("description")
+                        ? _c("span", { staticClass: "text-danger is-small" }, [
+                            _vm._v(_vm._s(_vm.error.get("description")))
+                          ])
+                        : _vm._e()
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "button is-primary",
+                      attrs: { disabled: _vm.error.any() }
+                    },
+                    [_vm._v("Submit")]
+                  )
+                ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(0)
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ]),
     _vm._v(" "),
     _c(
       "div",
@@ -39319,7 +39307,7 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("\n                                        Hi there!, "),
+              _vm._v("\n                                    Hi there!, "),
               _c("strong", [_vm._v("Ask Anything you want..")])
             ])
           ])

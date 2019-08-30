@@ -1,9 +1,9 @@
 <template>
     <div class="formContent">
 
-<section class="section" id="posicionamiento">
-    <div class="container pt-5">
-        <div class="row pt-5">
+    <section class="section" >
+        <div class="container mt-5">
+        <div class="row mt-5">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <form action="/mail" method="post" @submit.prevent="onSubmit" @keydown="searchErrors($event.target.name)">
                     <div class="field">
@@ -132,6 +132,7 @@ export default {
     height: 100vh;
     width: 100vw;
 }
+
 .subtitlecolor{
     padding-top: 30px;
     color: hsl(171, 100%, 41%);
@@ -144,7 +145,7 @@ export default {
     background-color:transparent;
 }
 @media(max-width:900px){
-    #posicionamiento{
+    .formContent{
     height: 100%;
     width: 100%;
     }
@@ -152,7 +153,9 @@ export default {
         padding-top: 0;
     }
     .contactFooter{
-        height: 0px;
+        position: relative;
+        display: block;
+
     }
 
 }
