@@ -2,38 +2,38 @@
     <div>
           <section class="section" id="aboutme">
                     <div class="container">
-                    <h1 class="title mb-5">The Web Developer You Are Looking For</h1>
+                    <h1 class="title mb-5">Looking for a Web Developer?, I can help you</h1>
                       <div class="row mt-5">
-                          <div class="col">
+                          <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6">
                                 <img src="/images/profile.jpg" class="box" alt="profile" id="perfil">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 firstSubtitle">
                                       <h2 class="subtitle mt-3">
-                                          <strong>I'm kidding, but stay and take a look...</strong>
+                                          <strong>Heaven is coding, but only when everything goes right...</strong>
 
                                             </h2>
-                                                <em>My name is EM and I’m a Web Developer and UX Designer based in the passionate Buenos Aires, Argentina with a few years of experience using the basics web technologies in the coolest ways, sometimes as a Contractor for US-based agencies, sometimes as a Freelancer and some other times just for fun but always trying to get the best from each experience.
-                                            Yes, I speak Spanish!</em>
+                                                <em>Wait!, Just kidding...,
+                                                    For some reason, i dont know why yet, i merged in this passion for Web Developing.<br>
+                                                    My first steps starts a couple of years ago when a big screen with danger text told me that everything was going to blow up.<br> D  ont worry im a good guy, indeed...<br>
+                                                    In a strange way i became addicted to that feeling when you need to resolve a problem and nothing comes up to you, you understand me? right?.
+                                                    <br>
+                                                    If you have a project and try to avoid this situations maybe i can do it for you...
+                                                    Look my profile, Enzo ZoneM will save your headache.
+                                                     </em>
                                                <br>
 
                           </div>
                           </div>
                           <div class="row justify-content-center">
-                              <div class="col-2">
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 secondTag">
                                              <scroll href="#skills" class="ascroll">
-                                                         <h2 class="atext subtitle is-primary">
+                                                         <h2 class="atext subtitle">
                                                              <strong>See my Profile, <i class="fa fa-arrow-down" aria-hidden="true"></i></strong>
                                                          </h2>
 
                                                     </scroll>
                               </div>
                           </div>
-
-
-
-
-
-
                     </div>
             </section>
 
@@ -41,13 +41,42 @@
                     </section>
 
                 <section class="section" id="skills">
-                    <div class="container" v-scroll="handleScroll">
+                    <div class="container" id="containerScroll" v-scroll="handleScroll">
                         <skills-component :ball1="balls"></skills-component>
                     </div>
+
                 </section>
+
                  <section id="separator2">
                     </section>
-                    <scroll v-if="arrow" @click="scrollToTop" href="#app">
+
+                <section class="section" id="worksDisplay">
+                    <div class="container" id="workImage" v-scroll="handleScroll">
+                                 <div class="row justify-content-start">
+                            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 mt-4 mb-5">
+                                    <h2 class="subtitle">
+                                        Check Out... My first Work & proud of it
+                                    </h2>
+
+                                       <a class="juegohistoria atext" href="http://www.historiaeconomica.dhalumnos.com/">
+                                         <strong>http://www.historiaeconomica.dhalumnos.com/</strong></a>
+                            </div>
+                        </div>
+                         <div class="row justify-content-center workcontent">
+                            <first-work :firstwork="firstwork" id="componentFirstWork"></first-work>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                        <section id="footerBackground">
+                                                <h5 class="subtitlecolor">© 2019 Enzo Minniti | All Rights Reserved.</h5>
+
+                         </section>
+
+                    <!-- flecha de scroll -->
+                    <scroll id="arrowScroll" v-if="arrow" @click="scrollToTop" href="#app">
                         <i class="fas fa-angle-double-up fa-7x is-primary arrowUp"></i>
                     </scroll>
     </div>
@@ -55,6 +84,8 @@
 <script>
 import SmoothScrollingVue from '../components/SmoothScrolling.vue';
 import SkillsComponent from '../components/SkillsComponent.vue';
+import FirstWork from '../components/FirstWork';
+
 Vue.directive('scroll',{
     inserted:function(el,binding){
         let f=function(evt){
@@ -70,25 +101,40 @@ export default {
         return {
             balls:false,
             arrow:false,
+            firstwork:false,
         }
     },
     components:{
         'scroll':SmoothScrollingVue,
         'skills-component':SkillsComponent,
+        'first-work':FirstWork,
     },
+
        methods: {
 
             handleScroll: function(evt,el){
                 var windowBottom=$(window).scrollTop()+$(window).innerHeight();//JQUERY
                 var elBottom=el.offsetTop;
-
-                if(elBottom<windowBottom){
-                        this.arrow=true;
-                        this.balls=true;
-                }else{
-                    this.arrow=false;
-                    this.balls=false;
+                if(el.id=="containerScroll")
+                {
+                        if(elBottom<windowBottom){
+                                                this.arrow=true;
+                                                this.balls=true;
+                                        }else{
+                                            this.arrow=false;
+                                            this.balls=false;
+                                        }
                 }
+                if(el.id=="workImage")
+                {
+                              if(elBottom<windowBottom){
+                                                this.firstwork=true;
+                                        }else
+                                        {
+                                                this.firstwork=false;
+                                        }
+                }
+
 
                 // console.log(el.getBoundingClientRect().top);
                 // console.log(window.scrollY);
@@ -118,21 +164,15 @@ export default {
             filter: grayscale(100%);
             margin-right: 0%;
     }
-    #perfil{
-            transform: rotate(4deg);
-            box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
-            filter: grayscale(100%);
-            margin-right: 0%;
-    }
     #perfil:hover{
         transform: scale(1.2,1.2) rotateX(-4deg);
         filter:none;
         transition: all 0.35s;
     }
-    h2.atext strong{
+    .atext strong{
         color: hsl(171, 100%, 41%);
     }
-    h2.atext strong:hover{
+    .atext strong:hover{
         transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
          -webkit-background-clip: text;
          background-clip: text;
@@ -140,7 +180,7 @@ export default {
         background-image: linear-gradient(to right, hsl(171, 100%, 41%),hsl(236, 100%, 41%),hsl(268, 100%, 41%) );
          background-position: 0%;
     }
-    h2.atext::before{
+    .atext::before{
         position: absolute;
         left: 0;
         bottom: 0;
@@ -149,10 +189,15 @@ export default {
         background: hsl(171, 100%, 41%);
         content: "";
     }
-    h2.atext:hover::before{
+    .atext:hover::before{
         transition: all 0.5s ease;
         background:linear-gradient(to right,hsl(171, 100%, 41%),hsl(268, 100%, 41%)) ;
         width: 90%;
+    }
+    .juegohistoria.atext:hover::before{
+        transition: all 0.5s ease;
+        background:linear-gradient(to right,hsl(171, 100%, 41%),hsl(268, 100%, 41%)) ;
+        width: 50%;
     }
     .ascroll:hover{
         text-decoration: none;
@@ -161,14 +206,46 @@ export default {
         position: fixed;
         bottom: 100px;
         right: 250px;
-
-        color: hsla(171, 100%, 41%, 0.705);
-
-
+        color: hsla(171, 100%, 41%, 0.774);
     }
      .arrowUp:hover{
-         cursor: pointer;
+        cursor: pointer;
         color: hsl(171, 100%, 41%);
+    }
+    .iconMy{
+       color: hsl(171, 100%, 41%);
+    }
+    .subtitlecolor{
+        color: hsl(171, 100%, 41%);
+        width: fit-content;
+        display: block;
+        margin-left: auto;
+        margin-right: 5%;
+        margin-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+    #footerBackground{
+        /* position: absolute; */
+        /* bottom: 0; */
+        height:50px;
+        /* width: 100%; */
+        background-color:transparent;
+        /* box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); */
+    }
+    #worksDisplay{
+         background-color:rgba(53, 153, 123, 0.068);
+    }
+    @media(max-width:700px){
+        #arrowScroll{
+            display: none;
+        }
+        #footerBackground{
+            height: 5vh;
+        }
+        #perfil{
+            margin-left: 30px;
+        }
+
     }
  /* #aboutme::before{
         content:"";

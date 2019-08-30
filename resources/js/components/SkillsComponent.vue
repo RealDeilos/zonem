@@ -1,7 +1,9 @@
 <template>
-    <div >
-        <h2 class="subtitle mt-5">FrameWorks knowledge... <em>and still learning</em></h2>
-            <div class="d-flex align-items-center mt-1">
+<div>
+       <div class="row justify-content-start">
+           <div class="col-10">
+                       <h2 class="subtitle mt-4">FrameWorks knowledge... <em>& Working on it</em></h2>
+            <div class="d-flex align-items-center mt-1 ml-5">
                  <img src="/images/laravel.png" alt="" class="logo img-thumbnail d-inline-block mr-5">
                 <transition name="ballsin">
                     <div class="laravelball" v-if="ball1"></div>
@@ -19,7 +21,7 @@
                     <div class="laravelballIncomplete" v-if="ball1"></div>
                 </transition>
             </div>
-            <div class="d-flex align-items-center mt-2">
+            <div class="d-flex align-items-center mt-2 ml-5">
                 <img src="/images/vue.png" alt="" class="logo img-thumbnail d-inline-block mr-5">
                 <transition name="ballsin">
                     <div v-if="ball1" class="vueball">
@@ -42,8 +44,42 @@
                     </div>
                 </transition>
 
+
+           </div>
             </div>
     </div>
+    <div class="row justify-content-start mt-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <h2 class="subtitle mt-4">Language knowledge... <em>fundamentals OOB of course!</em></h2>
+                    <i class="fas fa-laptop-code fa-2x"></i>
+                    <br>
+                    <ol>
+                        <li>Php 7+</li>
+                        <li>JS ECMAScript 6</li>
+                        <li>Mysql</li>
+                        <li>git</li>
+                        <li>Scrum workflow</li>
+                        <li>node.js</li>
+                        <li>Ajax</li>
+                        <li>Html5/css3</li>
+                    </ol>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <h2 class="subtitle mt-4">
+                Degrees & Studies
+            </h2>
+            <i class="fas fa-graduation-cap fa-2x"></i>
+            <ol>
+                <li>Full Stack Web Developer. Digital House</li>
+                <li>Vue.js. Educación IT</li>
+            </ol>
+
+        </div>
+
+    </div>
+</div>
+
 </template>
 <script>
 export default {
@@ -61,39 +97,39 @@ export default {
     border-radius: 50%;
 }
 .vueball{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #42b883;
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 10px;
     opacity: 1;
 }
 .vueballIncomplete{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #42b883;
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 10px;
     opacity: 0.2;
 }
 .laravelball{
-   width: 50px;
-    height: 50px;
+   width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #f55247;
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 10px;
     opacity: 1;
 }
 .laravelballIncomplete{
-   width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #f55247;
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 10px;
     opacity: 0.2;
 }
 .ballsin-enter-active{

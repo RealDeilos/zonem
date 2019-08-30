@@ -4,7 +4,7 @@
 
     <route-animation></route-animation>
 
-
+    @include('layouts.errors')
 
 
 @endsection

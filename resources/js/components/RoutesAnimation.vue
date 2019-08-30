@@ -1,67 +1,102 @@
 <template>
     <div>
-        <nav class="navbar is-fixed-top is-transparent">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-    </a>
-    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+        <nav class="navbar fixed-top navbar-expand-lg" :class="navbarClass" id="#elnavbar" v-scroll="other">
+  <a class="navbar-brand ml-5" href="#">
+      <img src="/images/logo.png" alt="Developer Web back-end front-end Enzo Minniti" class="logoEnzo" :class="logoAnimated" >
+      </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+               <router-link to="/" tag="a" class="nav-link" exact>
+                                    <div class="control">
+                                        <a class="atext"><strong>Home</strong></a>
+                                     </div>
+                            </router-link>
+      </li>
+      <li class="nav-item">
+              <router-link to="/contact" tag="a" class="nav-link">
+                             <div class="control">
+                                    <a class="atext"><strong>Contact</strong></a>
+                             </div>
 
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
-    <div class="navbar-start">
-                    <router-link to="/" tag="a" class="navbar-item" exact>
-                        Home
-                    </router-link>
-                    <router-link to="/work" tag="a" class="navbar-item">
-                        <a>Speak</a>
-                   </router-link>
-    </div>
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field is-grouped">
-          <p class="control">
-            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
-              <span class="icon">
-                <i class="fab fa-twitter"></i>
-              </span>
-              <span>
-                Tweet
-              </span>
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.5/bulma-0.7.5.zip">
-              <span class="icon">
-                <i class="fas fa-download"></i>
-              </span>
-              <span>Download</span>
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
+
+                             </router-link>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav ml-auto mr-5">
+        <li class="nav-item mr-5">
+                            <div class="control">
+                                        <a href="https://www.linkedin.com/in/enzo-minniti-82ba81105/" class="atext">
+                                        <strong>
+                                            <i class="fab fa-linkedin fa-2x iconMy"></i>
+                                                Linkedin
+                                        </strong>
+                                        </a>
+                                </div>
+            </li>
+            <li class="nav-item mr-5">
+                        <div class="control">
+                                <a href="https://www.github.com/RealDeilos?tab=repositories" class="atext">
+                                    <strong>
+                                        <i class="fab fa-github fa-2x iconMy"></i>
+                                            GitHub
+                                    </strong>
+                                    </a>
+
+                            </div>
+            </li>
+    </ul>
   </div>
 </nav>
 
-            <div class="">
+
+
                     <transition appear name="fade">
                             <router-view class="page"></router-view>
                     </transition>
-            </div>
 
-    </div>
+
+        </div>
+
 </template>
 <script>
 export default {
+    data() {
+        return {
+            navbarClass:'navbar-light',
+            logoAnimated:'',
+        }
+    },
+            methods:{
+                other(evt,el){
 
+                    var windowBottom=$(window).scrollTop();//JQUERY
+                    if(windowBottom==0){
+                            el.style.opacity='1';
+                            el.style.backgroundColor='rgb(255, 255, 255)';
+                            this.navbarClass='navbar-light';
+                            this.logoAnimated='animated tada';
+                    }
+                    if(windowBottom!=0){
+                            el.style.opacity='0.7';
+                            el.style.backgroundColor='black';
+                            this.navbarClass='navbar-dark';
+                            this.logoAnimated='';
+                           }
+            },
+
+    }
 }
 </script>
 <style>
+    .logoEnzo{
+        height: 50px;
+        width: auto;
+    }
     .fade-enter-active{
        transition: all 1s ease;
     }
@@ -74,7 +109,8 @@ export default {
     }
     .fade-leave{
         opacity: 0;
-         transform: translateX(-30px);
+        transform: translateX(-30px);
     }
+
 
 </style>

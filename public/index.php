@@ -1,5 +1,5 @@
 <?php
-
+$objetivo = '../storage/app/public'; $enlace = 'storage'; symlink($objetivo, $enlace);
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
