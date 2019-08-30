@@ -6777,7 +6777,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.logo{\n    width: 100px;\n    height: auto;\n    border-radius: 50%;\n}\n.vueball{\n    width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #42b883;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 1;\n}\n.vueballIncomplete{\n    width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #42b883;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 0.2;\n}\n.laravelball{\n   width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #f55247;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 1;\n}\n.laravelballIncomplete{\n    width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #f55247;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 0.2;\n}\n.ballsin-enter-active{\n    transition:all 0.5s ease;\n}\n.ballsin-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin2-enter-active{\n    transition:all 1s ease;\n}\n.ballsin2-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin3-enter-active{\n    transition:all 1.5s ease;\n}\n.ballsin3-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin4-enter-active{\n    transition:all 2s ease;\n}\n.ballsin4-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin5-enter-active{\n    transition:all 2.5s ease;\n}\n.ballsin5-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n\n", ""]);
+exports.push([module.i, "\n.logo{\r\n    width: 100px;\r\n    height: auto;\r\n    border-radius: 50%;\n}\n.vueball{\r\n    width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #42b883;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 1;\n}\n.vueballIncomplete{\r\n    width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #42b883;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 0.2;\n}\n.laravelball{\r\n   width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #f55247;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 1;\n}\n.laravelballIncomplete{\r\n    width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #f55247;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 0.2;\n}\n.ballsin-enter-active{\r\n    transition:all 0.5s ease;\n}\n.ballsin-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin2-enter-active{\r\n    transition:all 1s ease;\n}\n.ballsin2-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin3-enter-active{\r\n    transition:all 1.5s ease;\n}\n.ballsin3-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin4-enter-active{\r\n    transition:all 2s ease;\n}\n.ballsin4-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin5-enter-active{\r\n    transition:all 2.5s ease;\n}\n.ballsin5-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -6815,7 +6815,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.formContent{\n    height: 100vh;\n    width: 100vw;\n}\n.subtitlecolor{\n    padding-top: 30px;\n    color: hsl(171, 100%, 41%);\n}\n.contactFooter{\n    position: absolute;\n    bottom: 7px;\n    height: 10vh;\n    width: 100%;\n    background-color:transparent;\n}\n\n", ""]);
+exports.push([module.i, "\n.formContent{\n    height: 100vh;\n    width: 100vw;\n}\n.subtitlecolor{\n    padding-top: 30px;\n    color: hsl(171, 100%, 41%);\n}\n.contactFooter{\n    position: absolute;\n    bottom: 7px;\n    height: 10vh;\n    width: 100%;\n    background-color:transparent;\n}\n@media(max-width:900){\n.contactFooter{\n    position: absolute;\n    bottom: 0;\n    height: 5vh;\n    width: 100%;\n    background-color:transparent;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -38788,7 +38788,7 @@ var staticRenderFns = [
         { staticClass: "col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" },
         [
           _c("h2", { staticClass: "subtitle mt-4" }, [
-            _vm._v("\n                Degrees & Studies\n            ")
+            _vm._v("\r\n                Degrees & Studies\r\n            ")
           ]),
           _vm._v(" "),
           _c("i", { staticClass: "fas fa-graduation-cap fa-2x" }),
@@ -54977,8 +54977,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\enzom\Desktop\cv\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\enzom\Desktop\cv\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\enzom\Desktop\zonem\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\enzom\Desktop\zonem\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -143,5 +143,14 @@ export default {
     width: 100%;
     background-color:transparent;
 }
+@media(max-width:900){
+    .contactFooter{
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+    background-color:transparent;
+    }
+}
 
 </style>
