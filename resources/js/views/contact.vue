@@ -35,7 +35,7 @@
         </form>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <section class="section">
+                <section class="section" id="message">
                                     <div class="container">
                                     <h1 class="title">Enzo ZoneM, at Your Service Anytime</h1>
                                     <h2 class="subtitle">
@@ -52,7 +52,7 @@
 
                 </section>
                        <section class="contactFooter">
-                             <h4 class="subtitle subtitlecolor">© 2019 Enzo Minniti | All Rights Reserved.</h4>
+                             <h4 class="subtitlecolor">© 2019 Enzo Minniti | All Rights Reserved.</h4>
                          </section>
             <div class="modal is-active" v-show="showModal">
                     <div class="modal-background"></div>
@@ -143,14 +143,18 @@ export default {
     width: 100%;
     background-color:transparent;
 }
-@media(max-width:900){
-    .contactFooter{
-    position: absolute;
-    bottom: 0;
-    height: 5vh;
+@media(max-width:900px){
+    .formContent{
+    height: 100%;
     width: 100%;
-    background-color:transparent;
     }
+    #message{
+        padding-top: 0;
+    }
+    .contactFooter{
+        height: 0px;
+    }
+
 }
 
 </style>

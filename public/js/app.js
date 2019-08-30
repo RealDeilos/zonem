@@ -6815,7 +6815,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.formContent{\n    height: 100vh;\n    width: 100vw;\n}\n.subtitlecolor{\n    padding-top: 30px;\n    color: hsl(171, 100%, 41%);\n}\n.contactFooter{\n    position: absolute;\n    bottom: 7px;\n    height: 10vh;\n    width: 100%;\n    background-color:transparent;\n}\n@media(max-width:900){\n.contactFooter{\n    position: absolute;\n    bottom: 0;\n    height: 5vh;\n    width: 100%;\n    background-color:transparent;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.formContent{\n    height: 100vh;\n    width: 100vw;\n}\n.subtitlecolor{\n    padding-top: 30px;\n    color: hsl(171, 100%, 41%);\n}\n.contactFooter{\n    position: absolute;\n    bottom: 7px;\n    height: 10vh;\n    width: 100%;\n    background-color:transparent;\n}\n@media(max-width:900px){\n.formContent{\n    height: 100%;\n    width: 100%;\n}\n#message{\n        padding-top: 0;\n}\n.contactFooter{\n        height: 0px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -39300,7 +39300,7 @@ var staticRenderFns = [
       "div",
       { staticClass: "col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" },
       [
-        _c("section", { staticClass: "section" }, [
+        _c("section", { staticClass: "section", attrs: { id: "message" } }, [
           _c("div", { staticClass: "container" }, [
             _c("h1", { staticClass: "title" }, [
               _vm._v("Enzo ZoneM, at Your Service Anytime")
@@ -39320,7 +39320,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "contactFooter" }, [
-      _c("h4", { staticClass: "subtitle subtitlecolor" }, [
+      _c("h4", { staticClass: "subtitlecolor" }, [
         _vm._v("© 2019 Enzo Minniti | All Rights Reserved.")
       ])
     ])
