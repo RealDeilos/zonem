@@ -2056,8 +2056,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 
@@ -39014,27 +39012,25 @@ var staticRenderFns = [
         [
           _c("h2", { staticClass: "subtitle mt-3" }, [
             _c("strong", [
-              _vm._v("Heaven is coding, but only when everything goes right...")
+              _vm._v("Coding is Heaven!, only when everything goes right...")
             ])
           ]),
           _vm._v(" "),
           _c("em", [
             _vm._v(
-              "Wait!, Just kidding...,\n                                                For some reason, i dont know why yet, i merged in this passion for Web Development."
+              "\n                                                Just kidding! For some reason, don't know why yet, I dived into this passion for Web Development."
             ),
             _c("br"),
             _vm._v(
-              "\n                                                My first steps starts a couple of years ago when a big screen with danger text told me that everything was going to blow up."
-            ),
-            _c("br"),
-            _vm._v(" D  ont worry im a good guy, indeed..."),
-            _c("br"),
-            _vm._v(
-              "\n                                                In a strange way i became addicted to that feeling when you need to resolve a problem and nothing comes up to you, you understand me? right?.\n                                                "
+              "\n                                                My first steps started a couple of years ago when some big ominous text on my screen told me that everything was going to blow up."
             ),
             _c("br"),
             _vm._v(
-              "\n                                                If you have a project and try to avoid this situations maybe i can do it for you...\n                                                Look my profile, Enzo ZoneM will save your headache.\n                                                 "
+              "\n                                                In some strange way I became addicted to that feeling you get when you need to solve a problem and nothing comes up to you. You understand me, right?"
+            ),
+            _c("br"),
+            _vm._v(
+              "\n                                                If you don't like it as much as I do, but you have a project and are in fact trying to avoid this situations, maybe I can do it for you! Look into my profile, Enzo ZoneM. I'm here to save you from a headache.\n                                                 "
             )
           ]),
           _vm._v(" "),

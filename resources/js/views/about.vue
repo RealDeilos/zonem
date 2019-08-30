@@ -9,16 +9,14 @@
                           </div>
                           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 firstSubtitle">
                                       <h2 class="subtitle mt-3">
-                                          <strong>Heaven is coding, but only when everything goes right...</strong>
+                                          <strong>Coding is Heaven!, only when everything goes right...</strong>
 
                                             </h2>
-                                                <em>Wait!, Just kidding...,
-                                                    For some reason, i dont know why yet, i merged in this passion for Web Development.<br>
-                                                    My first steps starts a couple of years ago when a big screen with danger text told me that everything was going to blow up.<br> D  ont worry im a good guy, indeed...<br>
-                                                    In a strange way i became addicted to that feeling when you need to resolve a problem and nothing comes up to you, you understand me? right?.
-                                                    <br>
-                                                    If you have a project and try to avoid this situations maybe i can do it for you...
-                                                    Look my profile, Enzo ZoneM will save your headache.
+                                                <em>
+                                                    Just kidding! For some reason, don't know why yet, I dived into this passion for Web Development.<br>
+                                                    My first steps started a couple of years ago when some big ominous text on my screen told me that everything was going to blow up.<br>
+                                                    In some strange way I became addicted to that feeling you get when you need to solve a problem and nothing comes up to you. You understand me, right?<br>
+                                                    If you don't like it as much as I do, but you have a project and are in fact trying to avoid this situations, maybe I can do it for you! Look into my profile, Enzo ZoneM. I'm here to save you from a headache.
                                                      </em>
                                                <br>
 
