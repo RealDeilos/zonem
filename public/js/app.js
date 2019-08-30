@@ -1821,6 +1821,13 @@ __webpack_require__.r(__webpack_exports__);
         this.logoAnimated = '';
       }
     }
+  },
+  watch: {
+    $route: function $route(to, from) {
+      // var x=document.getElementById('elnavbar');
+      // console.log(x);
+      $('#navbarNav').collapse('hide');
+    }
   }
 });
 
@@ -38472,27 +38479,33 @@ var render = function() {
             }
           ],
           staticClass: "navbar fixed-top navbar-expand-lg",
-          class: _vm.navbarClass,
-          attrs: { id: "#elnavbar" }
+          class: _vm.navbarClass
         },
         [
-          _c("a", { staticClass: "navbar-brand ml-5", attrs: { href: "#" } }, [
-            _c("img", {
-              staticClass: "logoEnzo",
-              class: _vm.logoAnimated,
-              attrs: {
-                src: "/images/logo.png",
-                alt: "Developer Web back-end front-end Enzo Minniti"
-              }
-            })
-          ]),
+          _c(
+            "router-link",
+            {
+              staticClass: "navbar-brand ml-5",
+              attrs: { to: "/", tag: "a", exact: "" }
+            },
+            [
+              _c("img", {
+                staticClass: "logoEnzo",
+                class: _vm.logoAnimated,
+                attrs: {
+                  src: "/images/logo.png",
+                  alt: "Developer Web back-end front-end Enzo Minniti"
+                }
+              })
+            ]
+          ),
           _vm._v(" "),
           _vm._m(0),
           _vm._v(" "),
           _c(
             "div",
             {
-              staticClass: "collapse navbar-collapse",
+              staticClass: "navbar-collapse collapse",
               attrs: { id: "navbarNav" }
             },
             [
@@ -38503,10 +38516,7 @@ var render = function() {
                   [
                     _c(
                       "router-link",
-                      {
-                        staticClass: "nav-link",
-                        attrs: { to: "/", tag: "a", exact: "" }
-                      },
+                      { staticClass: "nav-link", attrs: { to: "/", tag: "a" } },
                       [
                         _c("div", { staticClass: "control" }, [
                           _c("a", { staticClass: "atext" }, [
@@ -38545,7 +38555,8 @@ var render = function() {
               _vm._m(1)
             ]
           )
-        ]
+        ],
+        1
       ),
       _vm._v(" "),
       _c(

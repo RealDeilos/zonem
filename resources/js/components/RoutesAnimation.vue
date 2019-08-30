@@ -1,23 +1,23 @@
 <template>
     <div>
-        <nav class="navbar fixed-top navbar-expand-lg" :class="navbarClass" id="#elnavbar" v-scroll="other">
-  <a class="navbar-brand ml-5" href="#">
-      <img src="/images/logo.png" alt="Developer Web back-end front-end Enzo Minniti" class="logoEnzo" :class="logoAnimated" >
-      </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-lg" :class="navbarClass" v-scroll="other">
+            <router-link to="/" tag="a" class="navbar-brand ml-5" exact >
+             <img src="/images/logo.png" alt="Developer Web back-end front-end Enzo Minniti" class="logoEnzo" :class="logoAnimated" >
+      </router-link>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="navbar-collapse collapse"  id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-               <router-link to="/" tag="a" class="nav-link" exact>
+               <router-link to="/" tag="a" class="nav-link">
                                     <div class="control">
                                         <a class="atext"><strong>Home</strong></a>
                                      </div>
                             </router-link>
       </li>
       <li class="nav-item">
-              <router-link to="/contact" tag="a" class="nav-link">
+              <router-link to="/contact" tag="a" class="nav-link" >
                              <div class="control">
                                     <a class="atext"><strong>Contact</strong></a>
                              </div>
@@ -65,10 +65,12 @@
 </template>
 <script>
 export default {
+
     data() {
         return {
             navbarClass:'navbar-light',
             logoAnimated:'',
+
         }
     },
             methods:{
@@ -88,8 +90,14 @@ export default {
                             this.logoAnimated='';
                            }
             },
-
-    }
+         },
+         watch: {
+                $route(to,from){
+                    // var x=document.getElementById('elnavbar');
+                    // console.log(x);
+                   $('#navbarNav').collapse('hide');
+                }
+         },
 }
 </script>
 <style>
