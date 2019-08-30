@@ -93,9 +93,8 @@ export default {
          },
          watch: {
                 $route(to,from){
-                    // var x=document.getElementById('elnavbar');
-                    // console.log(x);
                    $('#navbarNav').collapse('hide');
+                   console.log(from);
                 }
          },
 }

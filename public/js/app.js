@@ -1824,9 +1824,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   watch: {
     $route: function $route(to, from) {
-      // var x=document.getElementById('elnavbar');
-      // console.log(x);
       $('#navbarNav').collapse('hide');
+      console.log(from);
     }
   }
 });
@@ -39021,7 +39020,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("em", [
             _vm._v(
-              "Wait!, Just kidding...,\n                                                For some reason, i dont know why yet, i merged in this passion for Web Developing."
+              "Wait!, Just kidding...,\n                                                For some reason, i dont know why yet, i merged in this passion for Web Development."
             ),
             _c("br"),
             _vm._v(

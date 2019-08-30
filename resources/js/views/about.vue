@@ -13,7 +13,7 @@
 
                                             </h2>
                                                 <em>Wait!, Just kidding...,
-                                                    For some reason, i dont know why yet, i merged in this passion for Web Developing.<br>
+                                                    For some reason, i dont know why yet, i merged in this passion for Web Development.<br>
                                                     My first steps starts a couple of years ago when a big screen with danger text told me that everything was going to blow up.<br> D  ont worry im a good guy, indeed...<br>
                                                     In a strange way i became addicted to that feeling when you need to resolve a problem and nothing comes up to you, you understand me? right?.
                                                     <br>
