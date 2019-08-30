@@ -1,7 +1,7 @@
 <template>
     <div class="formContent">
 
-<section class="section">
+<section class="section" id="posicionamiento">
     <div class="container pt-5">
         <div class="row pt-5">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -47,13 +47,13 @@
         </div>
 
     </div>
-
+                        <section class="contactFooter">
+                             <h4 class="subtitlecolor">© 2019 Enzo Minniti | All Rights Reserved.</h4>
+                         </section>
 
 
                 </section>
-                       <section class="contactFooter">
-                             <h4 class="subtitlecolor">© 2019 Enzo Minniti | All Rights Reserved.</h4>
-                         </section>
+
             <div class="modal is-active" v-show="showModal">
                     <div class="modal-background"></div>
                     <div class="modal-card">
@@ -144,7 +144,7 @@ export default {
     background-color:transparent;
 }
 @media(max-width:900px){
-    .formContent{
+    #posicionamiento{
     height: 100%;
     width: 100%;
     }
