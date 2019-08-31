@@ -1825,7 +1825,6 @@ __webpack_require__.r(__webpack_exports__);
   watch: {
     $route: function $route(to, from) {
       $('#navbarNav').collapse('hide');
-      console.log(from);
     }
   }
 });
@@ -2112,9 +2111,6 @@ Vue.directive('scroll', {
       //     alert('llegaste');
       // }
 
-    },
-    scrollToTop: function scrollToTop(event) {
-      alert(event);
     }
   }
 });
@@ -38969,18 +38965,11 @@ var render = function() {
       _vm._m(2),
       _vm._v(" "),
       _vm.arrow
-        ? _c(
-            "scroll",
-            {
-              attrs: { id: "arrowScroll", href: "#app" },
-              on: { click: _vm.scrollToTop }
-            },
-            [
-              _c("i", {
-                staticClass: "fas fa-angle-double-up fa-7x is-primary arrowUp"
-              })
-            ]
-          )
+        ? _c("scroll", { attrs: { id: "arrowScroll", href: "#app" } }, [
+            _c("i", {
+              staticClass: "fas fa-angle-double-up fa-7x is-primary arrowUp"
+            })
+          ])
         : _vm._e()
     ],
     1

@@ -74,7 +74,7 @@
                          </section>
 
                     <!-- flecha de scroll -->
-                    <scroll id="arrowScroll" v-if="arrow" @click="scrollToTop" href="#app">
+                    <scroll id="arrowScroll" v-if="arrow" href="#app">
                         <i class="fas fa-angle-double-up fa-7x is-primary arrowUp"></i>
                     </scroll>
     </div>
@@ -140,10 +140,7 @@ export default {
                     // if(window.scrollY==el.getBoundingClientRect().top){
                     //     alert('llegaste');
                     // }
-            },
-              scrollToTop(event){
-                alert(event);
-           },
+            }
     },
 }
 </script>

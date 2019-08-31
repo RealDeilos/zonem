@@ -94,7 +94,7 @@ export default {
          watch: {
                 $route(to,from){
                    $('#navbarNav').collapse('hide');
-                   console.log(from);
+
                 }
          },
 }
