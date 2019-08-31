@@ -18,7 +18,7 @@ export default new vueRouter({
     linkActiveClass:'active-one',
     scrollBehavior(to,from,savedPosition){
 
-        return {x:0,y:-76}
+        return {x:0,y:-100}
     }
 })
 
