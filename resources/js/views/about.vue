@@ -62,7 +62,6 @@
                         </div>
                          <div class="row justify-content-center workcontent">
                             <first-work :firstwork="firstwork" id="componentFirstWork"></first-work>
-
                         </div>
                     </div>
 
@@ -239,6 +238,14 @@ export default {
         }
         #perfil{
             margin-left: 30px;
+        }
+
+    }
+    @media(max-width:350px){
+        a.juegohistoria{
+            display: block;
+            font-size: 0.9em;
+
         }
 
     }

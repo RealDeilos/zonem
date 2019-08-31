@@ -2054,7 +2054,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -6777,7 +6776,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.logo{\r\n    width: 100px;\r\n    height: auto;\r\n    border-radius: 50%;\n}\n.vueball{\r\n    width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #42b883;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 1;\n}\n.vueballIncomplete{\r\n    width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #42b883;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 0.2;\n}\n.laravelball{\r\n   width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #f55247;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 1;\n}\n.laravelballIncomplete{\r\n    width: 35px;\r\n    height: 35px;\r\n    border-radius: 50%;\r\n    background-color: #f55247;\r\n    display: inline-block;\r\n    margin-right: 10px;\r\n    opacity: 0.2;\n}\n.ballsin-enter-active{\r\n    transition:all 0.5s ease;\n}\n.ballsin-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin2-enter-active{\r\n    transition:all 1s ease;\n}\n.ballsin2-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin3-enter-active{\r\n    transition:all 1.5s ease;\n}\n.ballsin3-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin4-enter-active{\r\n    transition:all 2s ease;\n}\n.ballsin4-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\n.ballsin5-enter-active{\r\n    transition:all 2.5s ease;\n}\n.ballsin5-enter{\r\n    opacity: 0;\r\n    transform: scale(0);\r\n    background-color:transparent;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.logo{\n    width: 100px;\n    height: auto;\n    border-radius: 50%;\n}\n.vueball{\n    width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #42b883;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 1;\n}\n.vueballIncomplete{\n    width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #42b883;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 0.2;\n}\n.laravelball{\n   width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #f55247;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 1;\n}\n.laravelballIncomplete{\n    width: 35px;\n    height: 35px;\n    border-radius: 50%;\n    background-color: #f55247;\n    display: inline-block;\n    margin-right: 10px;\n    opacity: 0.2;\n}\n.ballsin-enter-active{\n    transition:all 0.5s ease;\n}\n.ballsin-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin2-enter-active{\n    transition:all 1s ease;\n}\n.ballsin2-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin3-enter-active{\n    transition:all 1.5s ease;\n}\n.ballsin3-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin4-enter-active{\n    transition:all 2s ease;\n}\n.ballsin4-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n.ballsin5-enter-active{\n    transition:all 2.5s ease;\n}\n.ballsin5-enter{\n    opacity: 0;\n    transform: scale(0);\n    background-color:transparent;\n}\n@media(max-width:600px){\n.vueball{\n        width: 25px;\n        height: 25px;\n        margin-right: 5px;\n        margin-left: 5px;\n}\n.vueballIncomplete{\n            width: 25px;\n        height: 25px;\n        margin-left: 5px;\n\n        margin-right: 5px;\n}\n.laravelball{\n            width: 25px;\n        height: 25px;\n        margin-left: 5px;\n\n        margin-right:5px;\n}\n.laravelballIncomplete{\n            width: 25px;\n        height: 25px;\n        margin-left: 5px;\n\n        margin-right: 5px;\n}\n}\n", ""]);
 
 // exports
 
@@ -6796,7 +6795,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#aboutme{\n       padding-top: 10%;\n       background-color:rgba(53, 153, 123, 0.068);\n}\n#skills{\n       padding-top: 4%;\n}\n#perfil{\n           transform: rotate(4deg);\n           box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);\n           -webkit-filter: grayscale(100%);\n                   filter: grayscale(100%);\n           margin-right: 0%;\n}\n#perfil:hover{\n       transform: scale(1.2,1.2) rotateX(-4deg);\n       -webkit-filter:none;\n               filter:none;\n       transition: all 0.35s;\n}\n.atext strong{\n       color: hsl(171, 100%, 41%);\n}\n.atext strong:hover{\n       transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);\n        -webkit-background-clip: text;\n        background-clip: text;\n         -webkit-text-fill-color: transparent;\n       background-image: linear-gradient(to right, hsl(171, 100%, 41%),hsl(236, 100%, 41%),hsl(268, 100%, 41%) );\n        background-position: 0%;\n}\n.atext::before{\n       position: absolute;\n       left: 0;\n       bottom: 0;\n       width: 20%;\n       height: 1px;\n       background: hsl(171, 100%, 41%);\n       content: \"\";\n}\n.atext:hover::before{\n       transition: all 0.5s ease;\n       background:linear-gradient(to right,hsl(171, 100%, 41%),hsl(268, 100%, 41%)) ;\n       width: 90%;\n}\n.juegohistoria.atext:hover::before{\n       transition: all 0.5s ease;\n       background:linear-gradient(to right,hsl(171, 100%, 41%),hsl(268, 100%, 41%)) ;\n       width: 50%;\n}\n.ascroll:hover{\n       text-decoration: none;\n}\n.arrowUp{\n       position: fixed;\n       bottom: 100px;\n       right: 250px;\n       color: hsla(171, 100%, 41%, 0.774);\n}\n.arrowUp:hover{\n       cursor: pointer;\n       color: hsl(171, 100%, 41%);\n}\n.iconMy{\n      color: hsl(171, 100%, 41%);\n}\n.subtitlecolor{\n       color: hsl(171, 100%, 41%);\n       width: -webkit-fit-content;\n       width: -moz-fit-content;\n       width: fit-content;\n       display: block;\n       margin-left: auto;\n       margin-right: 5%;\n       margin-top: 0.5%;\n       padding-bottom: 0.5%;\n}\n#footerBackground{\n       /* position: absolute; */\n       /* bottom: 0; */\n       height:50px;\n       /* width: 100%; */\n       background-color:transparent;\n       /* box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); */\n}\n#worksDisplay{\n        background-color:rgba(53, 153, 123, 0.068);\n}\n@media(max-width:700px){\n#arrowScroll{\n           display: none;\n}\n#footerBackground{\n           height: 5vh;\n}\n#perfil{\n           margin-left: 30px;\n}\n}\n/* #aboutme::before{\n       content:\"\";\n       position: absolute;\n       top: 0;\n       left: 0;\n       background:rgba(0, 0, 255, 0);\n       height: 100%;\n       width: 100%;\n\n   } */\n   /* #aboutme::after{\n       content:\"\";\n       position: absolute;\n       top: 30;\n       left: 0;\n       height: 1px;\n       background:blue;\n       width: 100%;\n       z-index: 100;\n\n   } */\n\n\n", ""]);
+exports.push([module.i, "\n#aboutme{\n       padding-top: 10%;\n       background-color:rgba(53, 153, 123, 0.068);\n}\n#skills{\n       padding-top: 4%;\n}\n#perfil{\n           transform: rotate(4deg);\n           box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);\n           -webkit-filter: grayscale(100%);\n                   filter: grayscale(100%);\n           margin-right: 0%;\n}\n#perfil:hover{\n       transform: scale(1.2,1.2) rotateX(-4deg);\n       -webkit-filter:none;\n               filter:none;\n       transition: all 0.35s;\n}\n.atext strong{\n       color: hsl(171, 100%, 41%);\n}\n.atext strong:hover{\n       transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);\n        -webkit-background-clip: text;\n        background-clip: text;\n         -webkit-text-fill-color: transparent;\n       background-image: linear-gradient(to right, hsl(171, 100%, 41%),hsl(236, 100%, 41%),hsl(268, 100%, 41%) );\n        background-position: 0%;\n}\n.atext::before{\n       position: absolute;\n       left: 0;\n       bottom: 0;\n       width: 20%;\n       height: 1px;\n       background: hsl(171, 100%, 41%);\n       content: \"\";\n}\n.atext:hover::before{\n       transition: all 0.5s ease;\n       background:linear-gradient(to right,hsl(171, 100%, 41%),hsl(268, 100%, 41%)) ;\n       width: 90%;\n}\n.juegohistoria.atext:hover::before{\n       transition: all 0.5s ease;\n       background:linear-gradient(to right,hsl(171, 100%, 41%),hsl(268, 100%, 41%)) ;\n       width: 50%;\n}\n.ascroll:hover{\n       text-decoration: none;\n}\n.arrowUp{\n       position: fixed;\n       bottom: 100px;\n       right: 250px;\n       color: hsla(171, 100%, 41%, 0.774);\n}\n.arrowUp:hover{\n       cursor: pointer;\n       color: hsl(171, 100%, 41%);\n}\n.iconMy{\n      color: hsl(171, 100%, 41%);\n}\n.subtitlecolor{\n       color: hsl(171, 100%, 41%);\n       width: -webkit-fit-content;\n       width: -moz-fit-content;\n       width: fit-content;\n       display: block;\n       margin-left: auto;\n       margin-right: 5%;\n       margin-top: 0.5%;\n       padding-bottom: 0.5%;\n}\n#footerBackground{\n       /* position: absolute; */\n       /* bottom: 0; */\n       height:50px;\n       /* width: 100%; */\n       background-color:transparent;\n       /* box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2); */\n}\n#worksDisplay{\n        background-color:rgba(53, 153, 123, 0.068);\n}\n@media(max-width:700px){\n#arrowScroll{\n           display: none;\n}\n#footerBackground{\n           height: 5vh;\n}\n#perfil{\n           margin-left: 30px;\n}\n}\n@media(max-width:350px){\na.juegohistoria{\n           display: block;\n           font-size: 0.9em;\n}\n}\n/* #aboutme::before{\n       content:\"\";\n       position: absolute;\n       top: 0;\n       left: 0;\n       background:rgba(0, 0, 255, 0);\n       height: 100%;\n       width: 100%;\n\n   } */\n   /* #aboutme::after{\n       content:\"\";\n       position: absolute;\n       top: 30;\n       left: 0;\n       height: 1px;\n       background:blue;\n       width: 100%;\n       z-index: 100;\n\n   } */\n\n\n", ""]);
 
 // exports
 
@@ -38657,83 +38656,93 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "row justify-content-start" }, [
-      _c("div", { staticClass: "col-10" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "d-flex align-items-center mt-1 ml-5" },
-          [
-            _c("img", {
-              staticClass: "logo img-thumbnail d-inline-block mr-5",
-              attrs: { src: "/images/laravel.png", alt: "" }
-            }),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin" } }, [
-              _vm.ball1 ? _c("div", { staticClass: "laravelball" }) : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin2" } }, [
-              _vm.ball1 ? _c("div", { staticClass: "laravelball" }) : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin3" } }, [
-              _vm.ball1 ? _c("div", { staticClass: "laravelball" }) : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin4" } }, [
-              _vm.ball1
-                ? _c("div", { staticClass: "laravelballIncomplete" })
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin5" } }, [
-              _vm.ball1
-                ? _c("div", { staticClass: "laravelballIncomplete" })
-                : _vm._e()
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "d-flex align-items-center mt-2 ml-5" },
-          [
-            _c("img", {
-              staticClass: "logo img-thumbnail d-inline-block mr-5",
-              attrs: { src: "/images/vue.png", alt: "" }
-            }),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin" } }, [
-              _vm.ball1 ? _c("div", { staticClass: "vueball" }) : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin2" } }, [
-              _vm.ball1 ? _c("div", { staticClass: "vueball" }) : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin3" } }, [
-              _vm.ball1
-                ? _c("div", { staticClass: "vueballIncomplete" })
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin4" } }, [
-              _vm.ball1
-                ? _c("div", { staticClass: "vueballIncomplete" })
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("transition", { attrs: { name: "ballsin5" } }, [
-              _vm.ball1
-                ? _c("div", { staticClass: "vueballIncomplete" })
-                : _vm._e()
-            ])
-          ],
-          1
-        )
-      ])
+      _c(
+        "div",
+        { staticClass: "col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "d-flex align-items-center mt-1 ml-4 ml-sm-4 ml-md-5"
+            },
+            [
+              _c("img", {
+                staticClass:
+                  "logo img-thumbnail d-inline-block mr-3 mr-sm-3 mr-md-5",
+                attrs: { src: "/images/laravel.png", alt: "" }
+              }),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin" } }, [
+                _vm.ball1 ? _c("div", { staticClass: "laravelball" }) : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin2" } }, [
+                _vm.ball1 ? _c("div", { staticClass: "laravelball" }) : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin3" } }, [
+                _vm.ball1 ? _c("div", { staticClass: "laravelball" }) : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin4" } }, [
+                _vm.ball1
+                  ? _c("div", { staticClass: "laravelballIncomplete" })
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin5" } }, [
+                _vm.ball1
+                  ? _c("div", { staticClass: "laravelballIncomplete" })
+                  : _vm._e()
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "d-flex align-items-center mt-2 ml-4 ml-sm-4 ml-md-5"
+            },
+            [
+              _c("img", {
+                staticClass:
+                  "logo img-thumbnail d-inline-block mr-3 mr-sm-3 mr-md-5",
+                attrs: { src: "/images/vue.png", alt: "" }
+              }),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin" } }, [
+                _vm.ball1 ? _c("div", { staticClass: "vueball" }) : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin2" } }, [
+                _vm.ball1 ? _c("div", { staticClass: "vueball" }) : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin3" } }, [
+                _vm.ball1
+                  ? _c("div", { staticClass: "vueballIncomplete" })
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin4" } }, [
+                _vm.ball1
+                  ? _c("div", { staticClass: "vueballIncomplete" })
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("transition", { attrs: { name: "ballsin5" } }, [
+                _vm.ball1
+                  ? _c("div", { staticClass: "vueballIncomplete" })
+                  : _vm._e()
+              ])
+            ],
+            1
+          )
+        ]
+      )
     ]),
     _vm._v(" "),
     _vm._m(1)
@@ -38792,7 +38801,7 @@ var staticRenderFns = [
         { staticClass: "col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" },
         [
           _c("h2", { staticClass: "subtitle mt-4" }, [
-            _vm._v("\r\n                Degrees & Studies\r\n            ")
+            _vm._v("\n                Degrees & Studies\n            ")
           ]),
           _vm._v(" "),
           _c("i", { staticClass: "fas fa-graduation-cap fa-2x" }),

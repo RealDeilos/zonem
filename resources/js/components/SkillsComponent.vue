@@ -1,10 +1,10 @@
 <template>
 <div>
        <div class="row justify-content-start">
-           <div class="col-10">
+           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                        <h2 class="subtitle mt-4">FrameWorks knowledge... <em>& Working on it</em></h2>
-            <div class="d-flex align-items-center mt-1 ml-5">
-                 <img src="/images/laravel.png" alt="" class="logo img-thumbnail d-inline-block mr-5">
+            <div class="d-flex align-items-center mt-1 ml-4 ml-sm-4 ml-md-5">
+                 <img src="/images/laravel.png" alt="" class="logo img-thumbnail d-inline-block mr-3 mr-sm-3 mr-md-5">
                 <transition name="ballsin">
                     <div class="laravelball" v-if="ball1"></div>
                 </transition>
@@ -21,8 +21,8 @@
                     <div class="laravelballIncomplete" v-if="ball1"></div>
                 </transition>
             </div>
-            <div class="d-flex align-items-center mt-2 ml-5">
-                <img src="/images/vue.png" alt="" class="logo img-thumbnail d-inline-block mr-5">
+            <div class="d-flex align-items-center mt-2 ml-4 ml-sm-4 ml-md-5">
+                <img src="/images/vue.png" alt="" class="logo img-thumbnail d-inline-block mr-3 mr-sm-3 mr-md-5">
                 <transition name="ballsin">
                     <div v-if="ball1" class="vueball">
                     </div>
@@ -177,5 +177,33 @@ export default {
     transform: scale(0);
     background-color:transparent;
 }
+@media(max-width:600px){
+    .vueball{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .vueballIncomplete{
+            width: 25px;
+        height: 25px;
+        margin-left: 5px;
 
+        margin-right: 5px;
+    }
+    .laravelball{
+            width: 25px;
+        height: 25px;
+        margin-left: 5px;
+
+        margin-right:5px;
+    }
+    .laravelballIncomplete{
+            width: 25px;
+        height: 25px;
+        margin-left: 5px;
+
+        margin-right: 5px;
+    }
+}
 </style>
