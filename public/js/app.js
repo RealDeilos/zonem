@@ -54779,7 +54779,7 @@ var routes = [{
   scrollBehavior: function scrollBehavior(to, from, savedPosition) {
     return {
       x: 0,
-      y: 0
+      y: -76
     };
   }
 }));
