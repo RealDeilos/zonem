@@ -15,6 +15,10 @@ let routes=[
 
 export default new vueRouter({
     routes,
-    linkActiveClass:'active-one'
+    linkActiveClass:'active-one',
+    scrollBehavior(to,from,savedPosition){
+
+        return {x:0,y:0}
+    }
 })
 
