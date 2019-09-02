@@ -62,7 +62,7 @@
                                 <button class="delete" aria-label="close" @click="showModal=!showModal"></button>
                                 </header>
                         <section class="modal-card-body">
-                        <h2 class="subtitle">Your message have been send, hopfully read it... just kidding</h2>
+                        <h2 class="subtitle">Your message have been sent</h2>
 
                             <img src="/images/paperplane.png" alt="">
 
