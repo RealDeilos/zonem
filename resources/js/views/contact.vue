@@ -31,7 +31,7 @@
                                 </div>
 
                         </div>
-                    <button class="button is-primary" :disabled="error.any()">Submit</button>
+                    <button class="button is-primary" :class="{'is-loading':isLoading}" :disabled="error.any()">Submit</button>
         </form>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -102,19 +102,20 @@ export default {
                     name:'',
                     mail:'',
                     description:'',
+                    isLoading:false,
                     error:new Errors,
                     showModal:false,
             }
         },
         methods:{
             onSubmit(){
-
+                this.isLoading=true;
                 axios.post('/mail',this.$data)
                             .then(response=>this.onSuccess(response.data))
                             .catch(error=>this.error.record(error.response.data.errors))
             },
             onSuccess(data){
-                //un modal que le de un mensaje de enviado con un avion de papel
+                this.isLoading=false;
                 this.showModal=true;
                 this.name='';
                 this.description='';
