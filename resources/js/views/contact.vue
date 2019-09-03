@@ -115,8 +115,9 @@ export default {
                             .catch(error=>this.onErrors(error.response.data.errors))
             },
             onErrors(errors){
-                    this.error.record(errors);
                     this.isLoading=false;
+                    this.error.record(errors);
+
             },
             onSuccess(data){
                 this.isLoading=false;
