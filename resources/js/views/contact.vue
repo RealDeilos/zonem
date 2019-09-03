@@ -96,6 +96,22 @@ class Errors{
     }
 }
 
+// axios.interceptors.request.use(function (config) {
+//          this.isLoading=true;
+//     return config;
+//   }, function (error) {
+//       this.isLoading=false;
+//     return Promise.reject(error);
+//   });
+
+// // Add a response interceptor
+// axios.interceptors.response.use(function (response) {
+//         this.isLoading=true;
+//     return response;
+//   }, function (error) {
+//         this.isLoading=false;
+//     return Promise.reject(error);
+//   });
 export default {
         data() {
             return {
@@ -115,16 +131,16 @@ export default {
                             .catch(error=>this.onErrors(error.response.data.errors))
             },
             onErrors(errors){
-                    this.isLoading=false;
                     this.error.record(errors);
-
+                    this.isLoading=false;
             },
             onSuccess(data){
-                this.isLoading=false;
+
                 this.showModal=true;
                 this.name='';
                 this.description='';
                 this.mail='';
+                this.isLoading=false;
 
             },
             searchErrors(eventName){
