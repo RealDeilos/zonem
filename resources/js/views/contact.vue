@@ -112,7 +112,11 @@ export default {
                 this.isLoading=true;
                 axios.post('/mail',this.$data)
                             .then(response=>this.onSuccess(response.data))
-                            .catch(error=>this.error.record(error.response.data.errors))
+                            .catch(error=>this.onErrors(error.response.data.errors))
+            },
+            onErrors(errors){
+                    this.error.record(errors);
+                    this.isLoading=false;
             },
             onSuccess(data){
                 this.isLoading=false;
