@@ -10,23 +10,11 @@ a:hover{
     text-decoration: none;
 }
 #separator1{
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../images/separator1.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 
+    background-image: none;
 }
 #separator2{
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../images/separator2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-image: none;
 }
     .active-one{
         background-color: rgba(255, 255, 255, 0.123);
@@ -61,27 +49,57 @@ a:hover{
         border-radius: 25px;
         height: 50px;
     }
-
+@media screen and (min-width: 1440px) {
+        #separator1
+        {
+            width: 100vw;
+            height: 50vh;
+            background-image: url("../images/separator1.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        #separator2{
+            width: 100vw;
+            height: 50vh;
+            background-image: url("../images/separator2.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+@media(min-width:1024px){
+    #separator1
+    {
+        width: 100vw;
+        height: 50vh;
+        background-image: url("../images/separator1.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+        #separator2{
+            width: 100vw;
+            height: 50vh;
+            background-image: url("../images/separator2.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+}
 @media(max-width:1024px){
     h1.title{
         padding-top: 10%;
-}
-   #separator1{
-        height: 25vh;
     }
-    #separator2{
-        height: 25vh;
+
     }
-}
 @media(max-width:800px){
     h1.title{
             padding-top: 10%;
-    }
-    #separator1{
-        display: none;
-    }
-    #separator2{
-        display: none;
     }
 
 }
@@ -95,12 +113,7 @@ a:hover{
     .secondTag{
         margin-top: 5%;
     }
-    #separator1{
-        display: none;
-    }
-    #separator2{
-        display: none;
-    }
+
     ul.navbar-nav li{
         margin-top: 10px;
     }
