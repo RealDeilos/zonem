@@ -5,21 +5,22 @@
                        <h2 class="subtitle mt-4">FrameWorks knowledge... <em>& Working on it</em></h2>
             <div class="d-flex align-items-center mt-1 ml-4 ml-sm-4 ml-md-5">
                  <img src="/images/laravel.png" alt="" class="logo img-thumbnail d-inline-block mr-3 mr-sm-3 mr-md-5">
+
                 <transition name="ballsin">
                     <div class="laravelball" v-if="ball1"></div>
                 </transition>
-                <transition name="ballsin2">
+                   <transition name="ballsin2">
                     <div class="laravelball" v-if="ball1"></div>
                 </transition>
-                <transition name="ballsin3">
+                    <transition name="ballsin3">
                     <div class="laravelball" v-if="ball1"></div>
                 </transition>
-                <transition name="ballsin4">
-                    <div class="laravelballIncomplete" v-if="ball1"></div>
+                    <transition name="ballsin4">
+                    <div class="laravelballHalf" v-if="ball1"></div>
                 </transition>
-                <transition name="ballsin5">
-                    <div class="laravelballIncomplete" v-if="ball1"></div>
-                </transition>
+                    <div class="laravelballIncomplete"></div>
+
+
             </div>
             <div class="d-flex align-items-center mt-2 ml-4 ml-sm-4 ml-md-5">
                 <img src="/images/vue.png" alt="" class="logo img-thumbnail d-inline-block mr-3 mr-sm-3 mr-md-5">
@@ -32,17 +33,17 @@
                     </div>
                 </transition>
                     <transition name="ballsin3">
-                    <div  v-if="ball1" class="vueballIncomplete">
+                    <div  v-if="ball1" class="vueballHalf">
                     </div>
                 </transition>
-                <transition name="ballsin4">
+
                     <div  v-if="ball1" class="vueballIncomplete">
                     </div>
-                </transition>
-                <transition name="ballsin5">
-                    <div  v-if="ball1" class="vueballIncomplete">
+
+
+                    <div  class="vueballIncomplete">
                     </div>
-                </transition>
+
 
 
            </div>
@@ -50,7 +51,7 @@
     </div>
     <div class="row justify-content-start mt-5">
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <h2 class="subtitle mt-4">Language knowledge... <em>fundamentals OOB of course!</em></h2>
+                    <h2 class="subtitle mt-4">Language knowledge... <em>fundamentals OOP of course!</em></h2>
                     <i class="fas fa-laptop-code fa-2x"></i>
                     <br>
                     <ol>
@@ -87,7 +88,26 @@ export default {
            ball1:{
                default:false
            }
-       }
+       },
+       data() {
+           return {
+               ball2:false,
+               ball3:false,
+               ball4:false,
+           }
+       },
+       methods: {
+           change(){
+               console.log('hola');
+           }
+       },
+       watch: {
+           ball1:function(){
+               this.ball2=false;
+               this.ball3=false;
+               this.ball4=false;
+           }
+       },
 }
 </script>
 <style>
@@ -100,110 +120,103 @@ export default {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #42b883;
     display: inline-block;
+    background:linear-gradient(to left,#42b88341 50%, #42b883 50%);
+    background-size:300% 150%;
+    background-position: left bottom;
     margin-right: 10px;
-    opacity: 1;
 }
 .vueballIncomplete{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #42b883;
     display: inline-block;
+    background:#42b88341;
     margin-right: 10px;
-    opacity: 0.2;
 }
 .laravelball{
-   width: 35px;
+    width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #f55247;
     display: inline-block;
+    background:linear-gradient(to left,#f5534746 50%, #f55247 50%);
+    background-size:300% 150%;
+    background-position: left bottom;
     margin-right: 10px;
-    opacity: 1;
 }
 .laravelballIncomplete{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #f55247;
     display: inline-block;
+    background:#f5534746;
     margin-right: 10px;
-    opacity: 0.2;
 }
 .ballsin-enter-active{
-    transition:all 0.5s ease;
+    transition:all 1s ease;
+    transition-delay: .2s;
 }
 
 .ballsin-enter{
-    opacity: 0;
-    transform: scale(0);
-    background-color:transparent;
+    background:linear-gradient(to left,#f5534746 50%, #f55247 50%);
+    background-size:300% 150%;
+    background-position: right bottom;
 }
 .ballsin2-enter-active{
     transition:all 1s ease;
+    transition-delay: .4s;
 }
-
 .ballsin2-enter{
-    opacity: 0;
-    transform: scale(0);
-    background-color:transparent;
+    background:linear-gradient(to left,#f5534746 50%, #f55247 50%);
+    background-size:300% 150%;
+    background-position: right bottom;
 }
 .ballsin3-enter-active{
-    transition:all 1.5s ease;
+    transition:all 1s ease;
+    transition-delay: .7s;
 }
-
+.vueballHalf{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    background:linear-gradient(to left,#42b88341 75%, #42b883 25%);
+    background-size:200% 100%;
+    background-position: left bottom;
+    margin-right: 10px;
+}
 .ballsin3-enter{
-    opacity: 0;
-    transform: scale(0);
-    background-color:transparent;
+    background:linear-gradient(to left,#f5534746 50%, #f55247 50%);
+    background-size:200% 100%;
+    background-position: right bottom;
+}
+.laravelballHalf{
+     width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    background:linear-gradient(to left,#f5534746 70%, #f55247 30%);
+    background-size:200% 100%;
+    background-position: left bottom;
+    margin-right: 10px;
 }
 .ballsin4-enter-active{
-    transition:all 2s ease;
+    transition:all 1s ease;
+    transition-delay:1s;
 }
-
 .ballsin4-enter{
-    opacity: 0;
-    transform: scale(0);
-    background-color:transparent;
-}
-.ballsin5-enter-active{
-    transition:all 2.5s ease;
+    background:linear-gradient(to left,#f5534746 50%, #f55247 50%);
+    background-size:200% 100%;
+    background-position: right bottom;
 }
 
-.ballsin5-enter{
-    opacity: 0;
-    transform: scale(0);
-    background-color:transparent;
-}
 @media(max-width:600px){
-    .vueball{
+    .vueball,.vueballIncomplete,.laravelball,.laravelballIncomplete,.laravelballHalf,.vueballHalf{
         width: 25px;
         height: 25px;
         margin-right: 5px;
         margin-left: 5px;
     }
-    .vueballIncomplete{
-            width: 25px;
-        height: 25px;
-        margin-left: 5px;
 
-        margin-right: 5px;
-    }
-    .laravelball{
-            width: 25px;
-        height: 25px;
-        margin-left: 5px;
-
-        margin-right:5px;
-    }
-    .laravelballIncomplete{
-            width: 25px;
-        height: 25px;
-        margin-left: 5px;
-
-        margin-right: 5px;
-    }
 }
 </style>
