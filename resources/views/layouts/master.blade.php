@@ -16,7 +16,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
         <link rel="stylesheet" href="/css/app.css">
-        <link rel="stylesheet" href="{{URL::asset('/css/styles.css')}}">
+        <link rel="stylesheet" href="/css/styles.css">
 
         {{-- animated --}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
